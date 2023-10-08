@@ -1,16 +1,29 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+/* @font-face {
+  font-family: "Codec Pro Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Codec Pro Regular"), url("/src/assets/fonts/Codec-Cold-Regular-trial.ttf") format("woff");
+}
+@font-face {
+  font-family: "Codec Pro Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Codec Pro Regular"), url("/src/assets/fonts/Codec-Cold-Bold-trial.ttf") format("woff");
+}
+@font-face {
+  font-family: 'Codec Pro Medium';
+  src: url('./assets/fonts/Codec-Cold-Regular-trial.ttf') format('truetype');
+} */
